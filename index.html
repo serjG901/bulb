@@ -1,6 +1,6 @@
 <p>Bulb without dimmer</p>
 </br>
-<button id="toggle">Включить</button>
+<button id="toggle">Push on</button>
 </br>
 <img id="bulb" src="bulb.png"/>
 </br>
@@ -16,8 +16,8 @@
 <img id="bulbDimmable" src="bulb.png"/>
 <style>
 #toggle {
-    background: #6215dd;
-    color: white;
+    background: #ff0000;
+    color: rgb(255, 255, 255);
 }
 #bulb {
     width: 100px;
@@ -36,8 +36,8 @@ bulbToggle.addEventListener("click", () => {
     let status = bulbToggle.textContent;
 
      
-	  bulb.style.filter = (status == "Включить") ? 'grayscale(0%)' :  'grayscale(100%)';
-    bulbToggle.innerText = (status == "Включить") ? "Выключить" : "Включить";
+	  bulb.style.filter = (status == "Push on") ? 'grayscale(0%)' :  'grayscale(100%)';
+    bulbToggle.innerText = (status == "Push on") ? "Push off" : "Push on";
 
 });
 const bulbRange = document.getElementById("bulbRange");
